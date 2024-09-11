@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: white;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: urbanist, sans-serif;
+}
+
+@layer utilities {
+  .text-nav {
+    @apply flex-1 text-center font-urbanist text-[14px] font-medium leading-[21px] text-white;
+  }
+  .fade-text {
+    @apply font-urbanist text-[16px] font-medium leading-[24px] text-[#999999];
+  }
+  .count-text {
+    @apply font-urbanist text-[30px] font-bold leading-[45px] text-white;
+  }
+  .feature-text {
+    @apply text-center font-urbanist text-[16px] font-semibold leading-[24px] text-white;
+  }
+  .property-text {
+    @apply font-urbanist text-[20px] font-semibold leading-[30px] text-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
