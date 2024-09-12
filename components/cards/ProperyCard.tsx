@@ -4,12 +4,6 @@ import React from "react";
 import bathroom from "@/assets/logos/bathroom.svg";
 import bedroom from "@/assets/logos/bedroom.svg";
 import villa from "@/assets/logos/villa.svg";
-import {
-  ArrowLeft,
-  ArrowRight,
-  CircleArrowLeft,
-  CircleArrowRight,
-} from "lucide-react";
 
 const ProperyCard = () => {
   return (
@@ -41,7 +35,11 @@ const ProperyCard = () => {
               <div className="flex items-center gap-1.5">
                 {[
                   { img: bedroom, alt: "bedroom", text: data.bedroom },
-                  { img: bathroom, alt: "bathroom", text: data.bathroom },
+                  {
+                    img: bathroom,
+                    alt: "bathroom",
+                    text: data.bathroom,
+                  },
                   { img: villa, alt: "villa", text: data.villa },
                 ].map((item, index) => (
                   <div
@@ -71,17 +69,6 @@ const ProperyCard = () => {
             </div>
           </div>
         ))}
-      </div>
-      <div className="pt-10">
-        <div className="flex items-center justify-between border-t border-[#262626] py-4">
-          <h1 className="fade-text">
-            <span className="text-white"> 01</span> of 10
-          </h1>
-          <div className="flex gap-1">
-            <ArrowLeft className="size-6 rounded-full bg-[#262626] stroke-[#808080] p-1" />
-            <ArrowRight className="size-6 rounded-full bg-[#262626] p-1" />
-          </div>
-        </div>
       </div>
     </>
   );

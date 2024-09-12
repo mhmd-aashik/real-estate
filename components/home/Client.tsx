@@ -1,8 +1,8 @@
 import { ArrowLeft, ArrowRight, Sparkle, Sparkles } from "lucide-react";
 import React from "react";
-import ProperyCard from "../cards/ProperyCard";
+import ClientCard from "../cards/ClientCard";
 
-const Properties = () => {
+const Client = () => {
   return (
     <div className="mx-auto mt-20 w-[1280px]">
       <div className="flex flex-col gap-[10px]">
@@ -12,21 +12,21 @@ const Properties = () => {
           <Sparkle className="size-[6px] fill-[#666666] stroke-[#666666]" />
         </div>
         <h3 className="font-urbanist text-[38px] font-semibold leading-[57px] text-white">
-          Featured Properties
+          What Our Clients Say
         </h3>
         <div className="flex items-center justify-between">
           <h4 className="fade-text w-[975px]">
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Estatein. Click "View Details" for more
-            information.
+            Read the success stories and heartfelt testimonials from our valued
+            clients. Discover why they chose Estatein for their real estate
+            needs.
           </h4>
           <button className="text-nav max-w-fit gap-2 rounded-[10px] border border-[#262626] bg-[#1A1A1A] px-5 py-[14px]">
-            View All Properties
+            View All Testimonials{" "}
           </button>
         </div>
       </div>
-      <ProperyCard />
+
+      <ClientCard />
       <div className="pt-10">
         <div className="flex items-center justify-between border-t border-[#262626] py-4">
           <h1 className="fade-text">
@@ -42,4 +42,4 @@ const Properties = () => {
   );
 };
 
-export default Properties;
+export default Client;

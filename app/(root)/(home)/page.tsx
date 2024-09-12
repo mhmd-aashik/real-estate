@@ -1,6 +1,9 @@
+import Client from "@/components/home/Client";
 import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
+import Journey from "@/components/home/Journey";
 import Properties from "@/components/home/Properties";
+import Questions from "@/components/home/Questions";
 import React from "react";
 
 const Home = () => {
@@ -9,7 +12,9 @@ const Home = () => {
       <Hero />
       <Features />
       <Properties />
-      <div className="mt-96 bg-black">a</div>
+      <Client />
+      <Questions />
+      <Journey />
     </div>
   );
 };

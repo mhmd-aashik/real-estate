@@ -28,6 +28,15 @@ body {
   .property-text {
     @apply font-urbanist text-[20px] font-semibold leading-[30px] text-white;
   }
+  .profile-text {
+    @apply font-urbanist text-lg font-medium leading-7 text-white;
+  }
+  .read-more-text {
+    @apply font-urbanist text-base font-medium leading-tight tracking-tight text-white;
+  }
+  .banner-text {
+    @apply font-urbanist text-[38px] font-semibold leading-[57px] text-white;
+  }
 }
 
 @layer utilities {
